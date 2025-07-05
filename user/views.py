@@ -11,3 +11,7 @@ def home(request):
 
 def my_portfolio(request):
     return render(request, 'index.html')
+
+
+def teacher_view(request):
+    return render(request, 'teacher.html')

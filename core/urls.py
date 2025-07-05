@@ -17,9 +17,12 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import include, path
 
-from user.views import my_portfolio
+from user.views import my_portfolio, teacher_view
+
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('user/', include('user.urls')),
-    path('', my_portfolio)
+    path('', my_portfolio),
+    path('teacher/', teacher_view)
 ]
