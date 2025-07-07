@@ -22,7 +22,6 @@ from user.views import my_portfolio, teacher_view
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('user/', include('user.urls')),
-    path('', my_portfolio),
+    path('users/', include('user.urls')),
     path('teacher/', teacher_view)
 ]
