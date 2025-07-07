@@ -1,9 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>My Website</title>
-    <style>
+    <title>about</title>
+       <style>
         body {
             margin: 0;
             font-family: Arial, sans-serif;
@@ -29,14 +28,11 @@
     </style>
 </head>
 <body>
-
     <header>
-        <a href="{% url 'pagesapp:home' %}">Home</a>
-        <a href="{% url 'pagesapp:contact' %}">Contact</a>
-        <a href="{% url 'pagesapp:about' %}">About</a>
+    <a href="{% url 'pagesapp:home' %}">Home</a>
+    <a href="{% url 'pagesapp:contact' %}">Contact</a>
+    <a href="{% url 'pagesapp:about' %}">About</a>
     </header>
-
-    <h1 style="text-align:center; margin-top: 50px;">Welcome to My Website</h1>
-
+    <h1>Welcome to aboout Page</h1>
 </body>
 </html>

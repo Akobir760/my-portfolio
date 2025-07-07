@@ -17,11 +17,12 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import include, path
 
-from user.views import my_portfolio, teacher_view
+from user.views import  teacher_view
 
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('users/', include('user.urls')),
-    path('teacher/', teacher_view)
+    path('users/', include('user.urls', namespace='users')),
+    path('teacher/', teacher_view),
+    path('', include('my_pages.url', namespace='pagesapp'))
 ]
